@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Academy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg"></div>
+
+<div class="app">
+
+  <h1>Web Academy</h1>
+  <p class="subtitle">IT testdan oz darajangizni bilib oling</p>
+
+  <!-- FAN TANLASH -->
+  <div class="card">
+    <h2>Bittasini tanlang</h2>
+    <div class="subjects">
+      <button class="html" onclick="selectSubject('html')">HTML</button>
+      <button class="css" onclick="selectSubject('css')">CSS</button>
+      <button class="js" onclick="selectSubject('js')">JavaScript</button>
+    </div>
+  </div>
+
+  <!-- DARAJA -->
+  <div id="levels" class="card hidden">
+    <h2>Darajani tanlang</h2>
+    <div class="levels">
+      <button onclick="selectLevel('easy')">Oson</button>
+      <button onclick="selectLevel('medium')">O‘rtacha</button>
+      <button onclick="selectLevel('hard')">Qiyin</button>
+    </div>
+  </div>
+
+  <!-- TEST -->
+  <div id="quiz" class="card hidden">
+    <div class="top">
+      <span id="progress"></span>
+      <span id="score"></span>
+    </div>
+
+    <h3 id="question"></h3>
+    <div id="options" class="options"></div>
+
+    <button id="next" onclick="nextQuestion()">Keyingi ➜</button>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
