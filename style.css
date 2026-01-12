@@ -12,7 +12,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Animated background */
 .bg {
   position: fixed;
   inset: 0;
@@ -47,7 +46,6 @@ h1 {
   margin-bottom: 30px;
 }
 
-/* Cards */
 .card {
   background: rgba(255,255,255,0.08);
   backdrop-filter: blur(15px);
@@ -83,7 +81,6 @@ h1 {
 .css  { background: linear-gradient(135deg,#36d1dc,#5b86e5); }
 .js   { background: linear-gradient(135deg,#f7971e,#ffd200); color:#000; }
 
-/* Levels */
 .levels button {
   width: 100%;
   padding: 14px;
@@ -100,7 +97,6 @@ h1 {
   background: linear-gradient(135deg,#22c55e,#16a34a);
 }
 
-/* Quiz */
 .top {
   display: flex;
   justify-content: space-between;
@@ -138,3 +134,4 @@ h1 {
 }
 
 .hidden { display: none; }
+
